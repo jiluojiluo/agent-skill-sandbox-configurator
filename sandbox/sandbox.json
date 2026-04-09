@@ -1,0 +1,23 @@
+{
+  "skill_name": "example-skill",
+  "permission_level": "standard",
+  "network": {
+    "default": "deny",
+    "allow": [],
+    "deny": []
+  },
+  "filesystem": {
+    "read_paths": ["/input/**", "/workspace/skills/example-skill/**"],
+    "write_paths": ["/output/**"],
+    "deny_paths": ["~/.ssh/**", "~/.aws/**", "~/.gnupg/**", "~/.config/**"]
+  },
+  "env_vars": {
+    "allowed": ["PYTHONPATH", "PATH", "HOME"],
+    "deny": ["AWS_*", "SSH_*", "API_KEY", "TOKEN", "PASSWORD", "SECRET_*"]
+  },
+  "resources": {
+    "memory_limit": "2g",
+    "cpu_limit": "2",
+    "timeout_seconds": 300
+  }
+}
