@@ -466,7 +466,7 @@ openclaw agents list && docker ps
 
 ## 联系方式
 
-- **作者**: 罗辑 , emial：841889282@qq.com
+- **作者**: luoji , emial：841889282@qq.com
 - **部门**: AI组
 - **GitHub**: [jiluojiluo](https://github.com/jiluojiluo)
 
