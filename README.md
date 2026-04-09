@@ -461,13 +461,12 @@ openclaw agents list && docker ps
 
 - [OpenClaw](https://github.com/openclaw/openclaw) - AI Agent 框架
 - [OpenSandbox](https://github.com/alibaba/OpenSandbox) - 开源 Sandbox 实现
-- 云山远光灯小组 - 实践验证与反馈
 
 ---
 
 ## 联系方式
 
-- **作者**: 罗辑
+- **作者**: 罗辑 , emial：841889282@qq.com
 - **部门**: AI组
 - **GitHub**: [jiluojiluo](https://github.com/jiluojiluo)
 
