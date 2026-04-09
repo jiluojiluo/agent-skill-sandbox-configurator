@@ -127,16 +127,16 @@ pip install -r requirements.txt
 
 ```bash
 # 扫描并分析 skill
-python scripts/scan_skill.py --skill huawei-contract-legal-review
+python scripts/scan_skill.py --skill contract-legal-review
 
 # 生成 sandbox 配置
-python scripts/generate_sandbox_config.py --skill huawei-contract-legal-review
+python scripts/generate_sandbox_config.py --skill contract-legal-review
 
 # 构建 Docker 镜像
-python scripts/build_image.py --skill huawei-contract-legal-review
+python scripts/build_image.py --skill contract-legal-review
 
 # 安全检查
-python scripts/security_check.py --skill huawei-contract-legal-review
+python scripts/security_check.py --skill contract-legal-review
 ```
 
 ### 一键配置
@@ -226,7 +226,7 @@ skills/your-skill/
 
 ```json
 {
-  "skill_name": "huawei-contract-legal-review",
+  "skill_name": "contract-legal-review",
   "permission_level": "standard",
   "network": {
     "default": "deny",
@@ -234,7 +234,7 @@ skills/your-skill/
     "deny": []
   },
   "filesystem": {
-    "read_paths": ["/input/**", "/workspace/skills/huawei-contract-legal-review/**"],
+    "read_paths": ["/input/**", "/workspace/skills/contract-legal-review/**"],
     "write_paths": ["/output/**"],
     "deny_paths": ["~/.ssh/**", "~/.aws/**", "~/.gnupg/**"]
   },
@@ -376,8 +376,8 @@ ENTRYPOINT ["python3"]
 ```yaml
 sandbox:
   enabled: true
-  image: openclaw/skill-huawei-contract-legal-review:latest
-  dockerfile: skills/huawei-contract-legal-review/sandbox/Dockerfile
+  image: openclaw/skill-contract-legal-review:latest
+  dockerfile: skills/contract-legal-review/sandbox/Dockerfile
 ```
 
 ---
@@ -435,7 +435,7 @@ openclaw agents list && docker ps
 | 资源限制 | ✅ 内存 2GB, CPU 2核 |
 | 执行环境 | ✅ Python 3.11 in Debian Bullseye |
 | 文件隔离 | ✅ 输入只读挂载，输出独立目录 |
-| 镜像版本 | ✅ openclaw/skill-huawei-contract-legal-review:latest (302MB) |
+| 镜像版本 | ✅ openclaw/skill-contract-legal-review:latest (302MB) |
 
 ---
 
@@ -468,7 +468,7 @@ openclaw agents list && docker ps
 ## 联系方式
 
 - **作者**: 罗辑
-- **部门**: 集团财经-云山远光灯小组
+- **部门**: AI组
 - **GitHub**: [jiluojiluo](https://github.com/jiluojiluo)
 
 ---
